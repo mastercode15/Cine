@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Sebastian\\.nuget\\packages\\": {}
+    "C:\\Users\\Tecnicas de Analisis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sebastian\\OneDrive\\Escritorio\\Cuarto Semestre\\Tecnicas de analisis\\Cine\\Cine\\Cine.csproj",
+      "projectUniqueName": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\Cine.csproj",
       "projectName": "Cine",
-      "projectPath": "C:\\Users\\Sebastian\\OneDrive\\Escritorio\\Cuarto Semestre\\Tecnicas de analisis\\Cine\\Cine\\Cine.csproj",
-      "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sebastian\\OneDrive\\Escritorio\\Cuarto Semestre\\Tecnicas de analisis\\Cine\\Cine\\obj\\",
+      "projectPath": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\Cine.csproj",
+      "packagesPath": "C:\\Users\\Tecnicas de Analisis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tecnicas de Analisis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

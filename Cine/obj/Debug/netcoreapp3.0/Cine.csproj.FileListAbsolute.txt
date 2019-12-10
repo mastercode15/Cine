@@ -15,3 +15,24 @@ C:\Users\Sebastian\OneDrive\Escritorio\Cuarto Semestre\Tecnicas de analisis\Cine
 C:\Users\Sebastian\OneDrive\Escritorio\Cuarto Semestre\Tecnicas de analisis\Cine\Cine\obj\Debug\netcoreapp3.0\Cine.AssemblyInfo.cs
 C:\Users\Sebastian\OneDrive\Escritorio\Cuarto Semestre\Tecnicas de analisis\Cine\Cine\obj\Debug\netcoreapp3.0\Cine.dll
 C:\Users\Sebastian\OneDrive\Escritorio\Cuarto Semestre\Tecnicas de analisis\Cine\Cine\obj\Debug\netcoreapp3.0\Cine.pdb
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\bin\Debug\netcoreapp3.0\Cine.exe
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\bin\Debug\netcoreapp3.0\Cine.deps.json
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\bin\Debug\netcoreapp3.0\Cine.runtimeconfig.json
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\bin\Debug\netcoreapp3.0\Cine.runtimeconfig.dev.json
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\bin\Debug\netcoreapp3.0\Cine.dll
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\bin\Debug\netcoreapp3.0\Cine.pdb
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\Cine.csprojAssemblyReference.cache
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\Cine_MarkupCompile.cache
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\Cine_MarkupCompile.lref
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\Cine.g.resources
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\Cine.AssemblyInfoInputs.cache
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\Cine.AssemblyInfo.cs
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\Cine.dll
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\Cine.pdb
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\WndLogin.g.cs
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\WndLogin.baml
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\PeliculasWindows.g.cs
+C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\obj\Debug\netcoreapp3.0\PeliculasWindows.baml

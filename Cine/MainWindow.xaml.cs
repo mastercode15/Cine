@@ -25,6 +25,7 @@ namespace Cine
         {
             InitializeComponent();
             this.DataContext = new ViewModel();
+            
         }
 
         private void buttonPlay_Click(object sender, RoutedEventArgs e)
@@ -34,7 +35,9 @@ namespace Cine
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            PeliculasWindows pelis = new PeliculasWindows();
+            pelis.Show();
+            this.Close();
         }
     }
 
