@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="PeliculasWindows" Height="450" Width="800">
     <Grid>
-        <Image Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\iroman.jfif" HorizontalAlignment="Left" Height="200" Margin="90,88,0,0" VerticalAlignment="Top" Width="250"/>
-        <Image Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\iroman2.jfif" HorizontalAlignment="Left" Height="200" Margin="250,88,0,0" VerticalAlignment="Top" Width="250"/>
-        <Image Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\avengers.jpg" HorizontalAlignment="Left" Height="200" Margin="470,88,0,0" VerticalAlignment="Top" Width="250"/>
+        <Image Source="C:\Users\Tecnicas de Analisis\Desktop\Proyecto TADSI\Cine\Images\iroman.jfif" HorizontalAlignment="Left" Height="200" Margin="90,88,0,0" VerticalAlignment="Top" Width="250"/>
+        <Image Source="C:\Users\Tecnicas de Analisis\Desktop\Proyecto TADSI\Cine\Images\iroman2.jfif" HorizontalAlignment="Left" Height="200" Margin="250,88,0,0" VerticalAlignment="Top" Width="250"/>
+        <Image Source="C:\Users\Tecnicas de Analisis\Desktop\Proyecto TADSI\Cine\Images\avengers.jpg" HorizontalAlignment="Left" Height="200" Margin="470,88,0,0" VerticalAlignment="Top" Width="250"/>
         <Button Content="Seleccionar Asientos" HorizontalAlignment="Left" Margin="90,308,0,0" VerticalAlignment="Top" Height="46" Width="140" Click="SelecionarAsiento"/>
         <Button Content="Seleccionar Asientos" HorizontalAlignment="Left" Margin="275,308,0,0" VerticalAlignment="Top" Height="46" Width="140" Click="SelecionarAsiento"/>
         <Button Content="Seleccionar Asientos" HorizontalAlignment="Left" Margin="470,308,0,0" VerticalAlignment="Top" Height="46" Width="140" Click="SelecionarAsiento"/>
