@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\Cine.csproj",
+      "projectUniqueName": "C:\\Users\\Tecnicas de Analisis\\Desktop\\Proyecto TADSI\\Cine\\Cine.csproj",
       "projectName": "Cine",
-      "projectPath": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\Cine.csproj",
+      "projectPath": "C:\\Users\\Tecnicas de Analisis\\Desktop\\Proyecto TADSI\\Cine\\Cine.csproj",
       "packagesPath": "C:\\Users\\Tecnicas de Analisis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\obj\\",
+      "outputPath": "C:\\Users\\Tecnicas de Analisis\\Desktop\\Proyecto TADSI\\Cine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tecnicas de Analisis\\AppData\\Roaming\\NuGet\\NuGet.Config",
