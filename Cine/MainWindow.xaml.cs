@@ -25,19 +25,17 @@ namespace Cine
         {
             InitializeComponent();
             this.DataContext = new ViewModel();
-            
         }
-
-        private void buttonPlay_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PeliculasWindows pelis = new PeliculasWindows();
-            pelis.Show();
-            this.Close();
+            if (MediaButton.Content == FindResource("Play"))
+            {
+                MediaButton.Content = FindResource("Stop");
+            }
+            else
+            {
+                MediaButton.Content = FindResource("Play");
+            }
         }
     }
 
@@ -71,11 +69,11 @@ namespace Cine
 
                     if (null != buttonType)
                     {
-                        if (buttonType.Contains("Play"))
+                        if (buttonType.Contains("asientoSeleccionado"))
                         {
                             isPlaying = false;
                         }
-                        else if (buttonType.Contains("Stop"))
+                        else if (buttonType.Contains("asientoDeseleccionado"))
                         {
                             isPlaying = true;
                         }
@@ -132,5 +130,10 @@ namespace Cine
                 CanExecuteChanged(this, EventArgs.Empty);
             }
         }
+
     }
+
 }
+
+
+

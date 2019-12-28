@@ -5,44 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="573" Width="936">
+    <Window.Resources>
+        <Image x:Key="Play" Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Width="51" />
+        <Image x:Key="Stop" Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" Height="51" Width="5"/>
+    </Window.Resources>
     <Grid>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\cine1.jpg" Height="272" Margin="0,1,0,0" VerticalAlignment="Top" Width="461"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="490,16,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="560,16,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\\asientoDeseleccionado.png" Height="51" Margin="630,16,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="700,16,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\cine1.jpg" Height="272" Margin="0,1,0,0" VerticalAlignment="Top" Width="461"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="490,16,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="560,16,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="630,16,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="700,16,0,0" VerticalAlignment="Top" Width="51"/>
         <!--segunda fila-->
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="490,86,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="560,86,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="630,86,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="700,86,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="490,86,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="560,86,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="630,86,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="700,86,0,0" VerticalAlignment="Top" Width="51"/>
         <!--tercera fila-->
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="490,156,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="560,156,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="630,156,0,0" VerticalAlignment="Top" Width="51"/>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="700,156,0,0" VerticalAlignment="Top" Width="51"/>
-        <Button Height="47" HorizontalAlignment="Left" Margin="703,157,0,0" Name="buttonPlay" VerticalAlignment="Top" Width="46" Command="{Binding PlayCommand}" CommandParameter="{Binding ElementName=ButtonImage, Path=Source}" Click="buttonPlay_Click" >
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="490,156,0,0" VerticalAlignment="Top" Width="51"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="51" Margin="560,156,0,0" VerticalAlignment="Top" Width="51"/>
+        <Button Height="60" HorizontalAlignment="Left" Margin="620,158,0,0" Name="buttonPlay" VerticalAlignment="Top" Width="72" Command="{Binding PlayCommand}" CommandParameter="{Binding ElementName=ButtonImage, Path=Source}" >
             <Image Name="ButtonImage">
                 <Image.Style>
                     <Style TargetType="{x:Type Image}">
                         <Style.Triggers>
                             <DataTrigger Binding="{Binding isPlaying}" Value="True">
-                                <Setter Property="Source" Value="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoDeseleccionado.png" />
+                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" />
                             </DataTrigger>
                             <DataTrigger Binding="{Binding isPlaying}" Value="False">
-                                <Setter Property="Source" Value="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\asientoSeleccionado.png" />
+                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" />
                             </DataTrigger>
                         </Style.Triggers>
                     </Style>
                 </Image.Style>
             </Image>
         </Button>
-        <Image HorizontalAlignment="Left"  Source="C:\Users\Tecnicas de Analisis\Desktop\cine\Cine\Images\pantalla.png" Height="37" Margin="465,204,0,0" VerticalAlignment="Top" Width="331"/>
+        <Button Click="Button_Click" Name="MediaButton" Margin="700,156,160,334">
+            <DynamicResource ResourceKey="Play"/>
+        </Button>
+
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\pantalla.png" Height="37" Margin="446,253,0,0" VerticalAlignment="Top" Width="331"/>
         <Button Content="Atrás" HorizontalAlignment="Left" Margin="70,310,0,0" VerticalAlignment="Top" Click="Button_Click" Height="40" Width="89"/>
         <Button Content="Continuar" HorizontalAlignment="Left" Margin="630,310,0,0" VerticalAlignment="Top" Click="Button_Click" Height="40" Width="89"/>
         <TextBlock HorizontalAlignment="Left" Height="19" Margin="280,310,0,0" Text="1 Asiento seleccionado" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="748,-143,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

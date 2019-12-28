@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\Cine.csproj": {}
+    "C:\\Users\\Sebastian\\OneDrive\\Escritorio\\prototipo_cine\\Cine\\Cine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\Cine.csproj": {
+    "C:\\Users\\Sebastian\\OneDrive\\Escritorio\\prototipo_cine\\Cine\\Cine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\Cine.csproj",
+        "projectUniqueName": "C:\\Users\\Sebastian\\OneDrive\\Escritorio\\prototipo_cine\\Cine\\Cine.csproj",
         "projectName": "Cine",
-        "projectPath": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\Cine.csproj",
-        "packagesPath": "C:\\Users\\Tecnicas de Analisis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tecnicas de Analisis\\Desktop\\cine\\Cine\\obj\\",
+        "projectPath": "C:\\Users\\Sebastian\\OneDrive\\Escritorio\\prototipo_cine\\Cine\\Cine.csproj",
+        "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sebastian\\OneDrive\\Escritorio\\prototipo_cine\\Cine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tecnicas de Analisis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,6 +47,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -55,7 +65,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
