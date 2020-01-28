@@ -66,16 +66,19 @@ namespace Cine
                 return _playCommand ?? new RelayCommand((x) =>
                 {
                     var buttonType = x.ToString();
+                    var contador=0;
 
                     if (null != buttonType)
                     {
                         if (buttonType.Contains("asientoSeleccionado"))
                         {
                             isPlaying = false;
+                            contador++;
                         }
                         else if (buttonType.Contains("asientoDeseleccionado"))
                         {
                             isPlaying = true;
+                            contador--;
                         }
                     }
                 });
