@@ -37,6 +37,13 @@ namespace Cine
                 MediaButton.Content = FindResource("Play");
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            PeliculasWindows peli = new PeliculasWindows();
+            peli.Show();
+            this.Close();
+        }
     }
 
     public class ViewModel : INotifyPropertyChanged

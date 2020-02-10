@@ -4,37 +4,11 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="cineDataSet1.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>cineDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Update="cineDataSet11.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>cineDataSet11.xsd</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="cineDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-    </None>
-    <None Update="cineDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>cineDataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="cineDataSet11.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>cineDataSet11.Designer.cs</LastGenOutput>
-    </None>
   </ItemGroup>
 
 </Project>

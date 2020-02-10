@@ -19,13 +19,15 @@ namespace Cine
     /// </summary>
     public partial class WndLogin : Window
     { 
+       
         public WndLogin()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void InicioSesion(object sender, RoutedEventArgs e)
         {
+         
             SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
 
             try
@@ -36,13 +38,15 @@ namespace Cine
                 SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
                 sqlcmd.CommandType = CommandType.Text;
                 sqlcmd.Parameters.AddWithValue("@correo", textEmail.Text);
-                sqlcmd.Parameters.AddWithValue("@pwd", textPwd.Text);
+                sqlcmd.Parameters.AddWithValue("@pwd", textPwd.Password);
                 int count = Convert.ToInt32(sqlcmd.ExecuteScalar());
+
+               
 
                 if(count == 1)
                 {
-                    PeliculasWindows loginS = new PeliculasWindows();
-                    loginS.Show();
+                    Home home = new Home();
+                    home.Show();
                     this.Close();
                 }
                 else

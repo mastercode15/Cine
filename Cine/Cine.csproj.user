@@ -7,6 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Funciones.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InsertarPelicula.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PeliculasWindows.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,17 +24,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="cineDataSet.xsd">
+    <Page Update="Funciones.xaml">
       <SubType>Designer</SubType>
-    </None>
-    <None Update="cineDataSet1.xsd">
+    </Page>
+    <Page Update="Home.xaml">
       <SubType>Designer</SubType>
-    </None>
-    <None Update="cineDataSet11.xsd">
+    </Page>
+    <Page Update="InsertarPelicula.xaml">
       <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -587,11 +587,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto\\Cine\\Cine.csproj",
+      "projectUniqueName": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto_Cine\\Cine\\Cine.csproj",
       "projectName": "Cine",
-      "projectPath": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto\\Cine\\Cine.csproj",
+      "projectPath": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto_Cine\\Cine\\Cine.csproj",
       "packagesPath": "C:\\Users\\franklin.zambrano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto\\Cine\\obj\\",
+      "outputPath": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto_Cine\\Cine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\franklin.zambrano\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -637,7 +637,7 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App.WPF": {
+          "Microsoft.WindowsDesktop.App": {
             "privateAssets": "none"
           }
         },

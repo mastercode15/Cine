@@ -5,15 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cine"
         mc:Ignorable="d"
-        Title="WndLogin" Height="450" Width="800">
-    <Grid>
-        <Button Content="Iniciar Sesión" HorizontalAlignment="Left" Margin="181,308,0,0" VerticalAlignment="Top" Height="46" Width="171" Click="InicioSesion"/>
-        <Button Content="Registrarse" HorizontalAlignment="Left" Margin="439,308,0,0" VerticalAlignment="Top" Height="46" Width="171"/>
-        <TextBox Name="textEmail" HorizontalAlignment="Left" Margin="192,135,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="407" Height="49" TextChanged="textBox1_TextChanged"/>
-        <TextBox Name="textPwd" HorizontalAlignment="Left" Margin="192,209,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="407" Height="49" TextChanged="textBox2_TextChanged"/>
-        <Label Content="Usuario" HorizontalAlignment="Left" Margin="94,149,0,0" VerticalAlignment="Top"/>
-        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="94,228,0,0" VerticalAlignment="Top"/>
-        <Image Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\promos.jpg" HorizontalAlignment="Left" Height="110" Margin="303,17,0,0" VerticalAlignment="Top" Width="228"/>
+        Title="WndLogin" Height="440" Width="458">
+    <Window.Resources>
+        <Color x:Key="GradientStopColor1">#FF4F6F8F</Color>
+    </Window.Resources>
+    <Grid Height="426">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3E3E40" Offset="0.108"/>
+                <GradientStop Color="#FF4F6F8F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="Iniciar Sesión" HorizontalAlignment="Left" Margin="129,308,0,0" VerticalAlignment="Top" Height="58" Width="207" Click="InicioSesion" FontFamily="Copperplate Gothic Bold" FontSize="24">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFCAC6C6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox Name="textEmail" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="192,144,0,0" Text="" TextWrapping="Wrap" Width="179" Height="35" TextChanged="textBox1_TextChanged" FontFamily="Berlin Sans FB" FontSize="16" Background="{x:Null}"/>
+        <PasswordBox Name="textPwd" VerticalContentAlignment="Center" PasswordChar="*" HorizontalAlignment="Left" Margin="192,224,0,0"  VerticalAlignment="Top" Width="179" Height="33" FontStretch="Medium" FontFamily="Berlin Sans FB" FontSize="16" Background="{x:Null}"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="94,149,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="55,227,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Image Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\promos.jpg" HorizontalAlignment="Left" Height="110" Margin="129,10,0,0" VerticalAlignment="Top" Width="228"/>
 
     </Grid>
 </Window>

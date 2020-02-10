@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto\Cine\obj\Debug\netcoreapp3.0\
+C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\obj\Debug\netcoreapp3.0\
 Cine
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0
-C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto\Cine\App.xaml
-3-593833594
+C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\App.xaml
+6-222562451
 
-7-1028840631
-193-1384465784
-MainWindow.xaml;PeliculasWindows.xaml;WndLogin.xaml;
+9-2111593245
+200-1613792621
+Funciones.xaml;Home.xaml;InsertarPelicula.xaml;MainWindow.xaml;PeliculasWindows.xaml;WndLogin.xaml;
 
 True
 

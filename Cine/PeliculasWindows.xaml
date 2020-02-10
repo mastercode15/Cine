@@ -5,15 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cine"
         mc:Ignorable="d"
-        Title="PeliculasWindows" Height="450" Width="800">
+        Title="PeliculasWindows" Height="510" Width="840">
     <Grid>
-        <Image Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\iroman.jfif" HorizontalAlignment="Left" Height="200" Margin="90,88,0,0" VerticalAlignment="Top" Width="250"/>
-        <Image Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\iroman2.jfif" HorizontalAlignment="Left" Height="200" Margin="250,88,0,0" VerticalAlignment="Top" Width="250"/>
-        <Image Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\avengers.jpg" HorizontalAlignment="Left" Height="200" Margin="470,88,0,0" VerticalAlignment="Top" Width="250"/>
-        <Button Content="Seleccionar Asientos" HorizontalAlignment="Left" Margin="90,308,0,0" VerticalAlignment="Top" Height="46" Width="140" Click="SelecionarAsiento"/>
-        <Button Content="Seleccionar Asientos" HorizontalAlignment="Left" Margin="275,308,0,0" VerticalAlignment="Top" Height="46" Width="140" Click="SelecionarAsiento"/>
-        <Button Content="Seleccionar Asientos" HorizontalAlignment="Left" Margin="470,308,0,0" VerticalAlignment="Top" Height="46" Width="140" Click="SelecionarAsiento"/>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3E3E40" Offset="0.133"/>
+                <GradientStop Color="#FF4F6F8F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Siguiente" HorizontalAlignment="Left" Margin="642,413,0,0" VerticalAlignment="Top" Height="46" Width="152" Click="SelecionarAsiento" FontFamily="Copperplate Gothic Bold" FontSize="24">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <WindowsFormsHost Name="WndForm" HorizontalAlignment="Left" Height="179" Margin="90,124,0,0" VerticalAlignment="Top" Width="627"/>
+        <TextBlock Name="TxtSinopsis" HorizontalAlignment="Left" Height="124" Margin="43,268,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <Label Content="Nombre: " HorizontalAlignment="Left" Height="31" Margin="35,33,0,0" VerticalAlignment="Top" Width="110" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Sinópsis: " HorizontalAlignment="Left" Height="30" Margin="35,0,0,0" VerticalAlignment="Center" Width="110" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Año: " HorizontalAlignment="Left" Height="32" Margin="64,147
+               ,0,0" VerticalAlignment="Top" Width="110" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Género: " HorizontalAlignment="Center" Height="31" Margin="0,38,0,0" VerticalAlignment="Top" Width="84" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Clasificación: " HorizontalAlignment="Left" Height="31" Margin="324,93,0,0" VerticalAlignment="Top" Width="140" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <TextBlock Name="TxtDuracion" HorizontalAlignment="Left" Height="31" Margin="132,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <TextBlock Name="TxtAnio" HorizontalAlignment="Left" Height="32" Margin="132,152,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <TextBlock Name="TxtGenero" HorizontalAlignment="Left" Height="31" Margin="494,43,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <TextBlock Name="TxtClasificacion" HorizontalAlignment="Left" Height="31" Margin="494,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <Button Content="Atrás" HorizontalAlignment="Left" Height="49" Margin="642,330,0,0" VerticalAlignment="Top" Width="152" Click="Button_Click_1" FontFamily="Copperplate Gothic Bold" FontSize="24">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="CmbPeli" HorizontalAlignment="Left" Margin="132,35,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbPeli_SelectionChanged" Background="{x:Null}" FontFamily="Berlin Sans FB" Height="19"/>
+        <ComboBox x:Name="CmbFuncion" HorizontalAlignment="Left" Margin="475,148,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" FontFamily="Berlin Sans FB" Height="19"/>
+        <Label Content="Funciones: " HorizontalAlignment="Center" Height="31" Margin="0,145,0,0" VerticalAlignment="Top" Width="110" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Duración: " HorizontalAlignment="Left" Height="31" Margin="22,93
+               ,0,0" VerticalAlignment="Top" Width="110" FontSize="16" FontFamily="Copperplate Gothic Bold"/>
+        <TextBlock Name="TxtId" HorizontalAlignment="Left" Height="31" Margin="282,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Visibility="Hidden"/>
+        <Label Content="Sala: " HorizontalAlignment="Left" Height="31" Margin="633,144,0,0" VerticalAlignment="Top" Width="55" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <TextBlock Name="TxtSala" HorizontalAlignment="Left" Height="31" Margin="698,149,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <Label Content="Idioma: " HorizontalAlignment="Left" Height="31" Margin="619,195,0,0" VerticalAlignment="Top" Width="79" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Definición: " HorizontalAlignment="Left" Height="31" Margin="582,247,0,0" VerticalAlignment="Top" Width="120" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <TextBlock Name="TxtIdioma" HorizontalAlignment="Left" Height="31" Margin="698,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <TextBlock Name="TxtDefinicion" HorizontalAlignment="Left" Height="31" Margin="702,252,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" RenderTransformOrigin="0.757,0.469" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <Label Content="Fecha: " HorizontalAlignment="Left" Height="31" Margin="388,192,0,0" VerticalAlignment="Top" Width="87" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <TextBlock Name="TxtFecha" HorizontalAlignment="Left" Height="16" Margin="475,194,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" FontFamily="Berlin Sans FB" FontSize="16"/>
+
 
     </Grid>
 </Window>
