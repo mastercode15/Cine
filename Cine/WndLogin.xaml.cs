@@ -28,7 +28,7 @@ namespace Cine
         private void InicioSesion(object sender, RoutedEventArgs e)
         {
          
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
 
             try
             {
@@ -66,6 +66,27 @@ namespace Cine
 
             
 
+        }
+        public int ID_Usuario()
+        {
+            int idusuario=1;
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+            try
+            {
+                if (sqlcon.State == ConnectionState.Closed)
+                    sqlcon.Open();
+                String query = "SELECT ID_usuario FROM Usuario WHERE Nom_usuario=@correo AND pwd_usuario=@pwd";
+                SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
+                sqlcmd.Parameters.AddWithValue("@correo", textEmail.Text);
+                sqlcmd.Parameters.AddWithValue("@pwd", textPwd.Password);
+                SqlDataReader registro = sqlcmd.ExecuteReader();
+                idusuario = Convert.ToInt32(registro["ID_usuario"]);
+            }
+            catch(Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+            return idusuario;
         }
 
 

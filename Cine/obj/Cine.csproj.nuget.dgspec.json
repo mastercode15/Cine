@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto_Cine\\Cine\\Cine.csproj": {}
+    "C:\\Users\\LENOVO\\Desktop\\KEVIN\\4to_Semestre\\TADSI\\Proyecto\\Cine\\Cine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto_Cine\\Cine\\Cine.csproj": {
+    "C:\\Users\\LENOVO\\Desktop\\KEVIN\\4to_Semestre\\TADSI\\Proyecto\\Cine\\Cine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto_Cine\\Cine\\Cine.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\KEVIN\\4to_Semestre\\TADSI\\Proyecto\\Cine\\Cine.csproj",
         "projectName": "Cine",
-        "projectPath": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto_Cine\\Cine\\Cine.csproj",
-        "packagesPath": "C:\\Users\\franklin.zambrano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franklin.zambrano\\Documents\\Universidad\\Cuarto Semestre\\Técnicas de Análisis\\Proyecto_Cine\\Cine\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\KEVIN\\4to_Semestre\\TADSI\\Proyecto\\Cine\\Cine.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\KEVIN\\4to_Semestre\\TADSI\\Proyecto\\Cine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\franklin.zambrano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,21 +22,34 @@ namespace Cine
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        Compra compra;
+        int idpeli, idfuncion, idsala, idasiento;
+        public MainWindow(int idp,int idf,int ids)
         {
             InitializeComponent();
             this.DataContext = new ViewModel();
+            idpeli = idp;
+            idfuncion = idf;
+            idsala = ids;
         }
+
+        private void getAsiento()
+        {
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+            sqlcon.Open();
+            String query = "select ID_asiento from Asiento where FK_ID_sala = 4";
+            SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
+            SqlDataReader registro = sqlcmd.ExecuteReader();
+            idasiento = 4;
+            sqlcon.Close();
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (MediaButton.Content == FindResource("Play"))
-            {
-                MediaButton.Content = FindResource("Stop");
-            }
-            else
-            {
-                MediaButton.Content = FindResource("Play");
-            }
+            getAsiento();
+            compra = new Compra(idpeli,idfuncion,idsala,idasiento);
+            compra.Show();
+            this.Hide();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

@@ -30,7 +30,7 @@ namespace Cine
 
         private void CargarPeliculas()
         {
-            sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
+            sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
 
             if (sqlcon.State == ConnectionState.Closed)
                 sqlcon.Open();
@@ -47,7 +47,7 @@ namespace Cine
         }
 
         private void CargarSala() {
-            sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
+            sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
             if (sqlcon.State == ConnectionState.Closed)
                 sqlcon.Open();
             String query = "SELECT ID_sala FROM Sala";
@@ -76,7 +76,7 @@ namespace Cine
 
         private void InsertarFuncion()
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
             
                 if (sqlcon.State == ConnectionState.Closed)
                     sqlcon.Open();
@@ -110,7 +110,7 @@ namespace Cine
 
         private void CmbPeli_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-                SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
+                SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
 
 
                 if (sqlcon.State == ConnectionState.Closed)
