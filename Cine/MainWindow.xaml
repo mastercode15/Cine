@@ -7,134 +7,64 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="573" Width="936">
     <Window.Resources>
-        <Image x:Key="Play" Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Height="36" Width="44" />
-        <Image x:Key="Stop" Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" Height="51" Width="5"/>
+        <Image x:Key="Play" Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" Stretch="Fill" Height="36" Width="44" />
+        <Image x:Key="Stop" Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" Stretch="Fill" Height="36" Width="44"/>
     </Window.Resources>
-    <Grid>
+    <Grid Margin="11,0,-11,0">
         <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\cine1.jpg" Height="272" Margin="0,1,0,0" VerticalAlignment="Top" Width="461"/>
         <!--segunda fila-->
         <!--tercera fila-->
-        <Button Height="60" HorizontalAlignment="Left" Margin="610,180,0,0" Name="buttonPlay" VerticalAlignment="Top" Width="72" Command="{Binding PlayCommand}" CommandParameter="{Binding ElementName=ButtonImage, Path=Source}" RenderTransformOrigin="0.5,0.5" >
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="-0.619"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="-0.389"/>
-                </TransformGroup>
-            </Button.RenderTransform>
-            <Image Name="ButtonImage">
-                <Image.Style>
-                    <Style TargetType="{x:Type Image}">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="True">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="False">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </Image.Style>
-            </Image>
+        <Button Click="Button_Click0"  Name="MediaButton" Margin="560,9,303,485">
+            <DynamicResource ResourceKey="Stop"/>
         </Button>
-        <Button Click="Button_Click" Name="MediaButton" Margin="702,21,161,473">
-            <DynamicResource ResourceKey="Play"/>
+        <Button Click="Button_Click1" Name="MediaButton1" Margin="643,8,220,486">
+            <DynamicResource ResourceKey="Stop"/>
         </Button>
-        <Button Click="Button_Click" Name="MediaButton1" Margin="794,22,60,472">
-            <DynamicResource ResourceKey="Play"/>
+        <Button Click="Button_Click2" Name="MediaButton2" Margin="817,8,46,486">
+            <DynamicResource ResourceKey="Stop"/>
         </Button>
-
+        <Button Click="Button_Click3" Name="MediaButton3" Margin="732,9,131,485">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click4" Name="MediaButton4" Margin="474,9,389,485">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click5"  Name="MediaButton5" Margin="560,88,303,405">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click6" Name="MediaButton6" Margin="643,88,220,406">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click7" Name="MediaButton7" Margin="817,88,46,406">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click8" Name="MediaButton8" Margin="732,88,131,405">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click9" Name="MediaButton9" Margin="474,88,389,406">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click10" Name="MediaButton10" Margin="474,88,389,406">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click11" Name="MediaButton11" Margin="750,168,113,326">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click12" Name="MediaButton12" Margin="675,168,188,326">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click13" Name="MediaButton13" Margin="599,168,264,326">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
+        <Button Click="Button_Click14" Name="MediaButton14" Margin="528,168,335,326">
+            <DynamicResource ResourceKey="Stop"/>
+        </Button>
 
 
         <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\pantalla.png" Height="37" Margin="520,253,0,0" VerticalAlignment="Top" Width="331"/>
-        <Button Content="Atrás" HorizontalAlignment="Left" Margin="70,310,0,0" VerticalAlignment="Top" Click="Button_Click" Height="40" Width="89"/>
-        <Button Content="Continuar" HorizontalAlignment="Left" Margin="630,310,0,0" VerticalAlignment="Top" Click="Button_Click" Height="40" Width="89"/>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="280,310,0,0" Text="1 Asiento seleccionado" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
-        <Button Height="60" HorizontalAlignment="Left" Margin="520,18,0,0" x:Name="buttonPlay_Copy1" VerticalAlignment="Top" Width="72" Command="{Binding PlayCommand}" CommandParameter="{Binding Source, ElementName=ButtonImage}" >
-            <Image x:Name="ButtonImage2">
-                <Image.Style>
-                    <Style TargetType="{x:Type Image}">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="True">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="False">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </Image.Style>
-            </Image>
-        </Button>
-        <Button Height="60" HorizontalAlignment="Left" Margin="519,99,0,0" x:Name="buttonPlay_Copy2" VerticalAlignment="Top" Width="72" Command="{Binding PlayCommand}" CommandParameter="{Binding Source, ElementName=ButtonImage}" >
-            <Image x:Name="ButtonImage3">
-                <Image.Style>
-                    <Style TargetType="{x:Type Image}">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="True">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="False">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </Image.Style>
-            </Image>
-        </Button>
-        <Button Height="60" HorizontalAlignment="Left" Margin="519,178,0,0" x:Name="buttonPlay_Copy3" VerticalAlignment="Top" Width="72" Command="{Binding PlayCommand}" CommandParameter="{Binding Source, ElementName=ButtonImage}" >
-            <Image x:Name="ButtonImage4">
-                <Image.Style>
-                    <Style TargetType="{x:Type Image}">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="True">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="False">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </Image.Style>
-            </Image>
-        </Button>
-        <Button Height="60" HorizontalAlignment="Left" Margin="612,20,0,0" x:Name="buttonPlay_Copy4" VerticalAlignment="Top" Width="72" Command="{Binding PlayCommand}" CommandParameter="{Binding Source, ElementName=ButtonImage}" >
-            <Image x:Name="ButtonImage5">
-                <Image.Style>
-                    <Style TargetType="{x:Type Image}">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="True">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="False">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </Image.Style>
-            </Image>
-        </Button>
-        <Button Height="60" HorizontalAlignment="Left" Margin="610,100,0,0" x:Name="buttonPlay_Copy5" VerticalAlignment="Top" Width="72" Command="{Binding PlayCommand}" CommandParameter="{Binding Source, ElementName=ButtonImage}" >
-            <Image x:Name="ButtonImage6">
-                <Image.Style>
-                    <Style TargetType="{x:Type Image}">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="True">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding isPlaying}" Value="False">
-                                <Setter Property="Source" Value="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </Image.Style>
-            </Image>
-        </Button>
-        <Button Click="Button_Click" x:Name="MediaButton_Copy" Margin="702,100,161,394" Content="{DynamicResource Play}"/>
-        <Button Click="Button_Click" x:Name="MediaButton_Copy1" Margin="700,178,163,316" Content="{DynamicResource Play}"/>
-        <Button Click="Button_Click" x:Name="MediaButton_Copy2" Margin="800,97,63,397" Content="{DynamicResource Play}"/>
-        <Button Click="Button_Click" x:Name="MediaButton_Copy3" Margin="798,179,65,315" Content="{DynamicResource Play}"/>
+        <Button Content="Atrás" HorizontalAlignment="Left" Margin="70,310,0,0" VerticalAlignment="Top"  Height="40" Width="89"/>
+        <Button Content="Continuar" HorizontalAlignment="Left" Margin="630,310,0,0" VerticalAlignment="Top"  Height="40" Width="89"/>
+        <TextBlock Name="selection" HorizontalAlignment="Left" Height="19" Margin="280,310,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
 
     </Grid>
 </Window>
