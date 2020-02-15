@@ -20,6 +20,7 @@ namespace Cine
         public Home()
         {
             InitializeComponent();
+            TxtIds.Text = WndLogin.id;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

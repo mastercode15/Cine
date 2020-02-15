@@ -37,5 +37,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <TextBlock Name="TxtIds" HorizontalAlignment="Left" Margin="504,250,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
     </Grid>
 </Window>

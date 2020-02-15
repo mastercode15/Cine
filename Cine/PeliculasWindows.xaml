@@ -40,7 +40,9 @@
         <TextBlock Name="TxtAnio" HorizontalAlignment="Left" Height="32" Margin="132,152,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Berlin Sans FB" FontSize="16"/>
         <TextBlock Name="TxtGenero" HorizontalAlignment="Left" Height="31" Margin="494,43,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Berlin Sans FB" FontSize="16"/>
         <TextBlock Name="TxtClasificacion" HorizontalAlignment="Left" Height="31" Margin="494,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <TextBlock Name="TxtIdFunc" HorizontalAlignment="Left" Height="31" Margin="494,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontFamily="Berlin Sans FB" FontSize="16" Visibility="Hidden"/>
         <Button Content="Atrás" HorizontalAlignment="Left" Height="49" Margin="642,330,0,0" VerticalAlignment="Top" Width="152" Click="Button_Click_1" FontFamily="Copperplate Gothic Bold" FontSize="24">
+            
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -62,7 +64,7 @@
         <TextBlock Name="TxtDefinicion" HorizontalAlignment="Left" Height="31" Margin="702,252,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" RenderTransformOrigin="0.757,0.469" FontFamily="Berlin Sans FB" FontSize="16"/>
         <Label Content="Fecha: " HorizontalAlignment="Left" Height="31" Margin="388,192,0,0" VerticalAlignment="Top" Width="87" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
         <TextBlock Name="TxtFecha" HorizontalAlignment="Left" Height="16" Margin="475,194,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" FontFamily="Berlin Sans FB" FontSize="16"/>
-
+        <TextBlock Name="TxtIds" HorizontalAlignment="Left" Margin="504,250,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
 
     </Grid>
 </Window>

@@ -24,11 +24,11 @@
         <Label Content="Hora: " HorizontalAlignment="Left" Margin="86,190,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
         <Label Content="Idioma: " HorizontalAlignment="Left" Margin="77,241,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
         <Label Content="Sala: " HorizontalAlignment="Left" Margin="352,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,1.003" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
-        <TextBox x:Name="TxtIdF" HorizontalAlignment="Left" Margin="167,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
-        <TextBox x:Name="TxtFecha" HorizontalAlignment="Left" Margin="165,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
-        <TextBox x:Name="TxtHora1" HorizontalAlignment="Left" Margin="165,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
-        <TextBox x:Name="TxtIdioma" HorizontalAlignment="Left" Margin="165,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
-        <ComboBox x:Name="CmbSala" HorizontalAlignment="Left" Margin="411,99,0,0" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
+        <TextBox Name="TxtIdF" HorizontalAlignment="Left" Margin="167,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
+        <TextBox Name="TxtFecha" HorizontalAlignment="Left" Margin="165,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
+        <TextBox Name="TxtHora1" HorizontalAlignment="Left" Margin="165,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
+        <TextBox Name="TxtIdioma" HorizontalAlignment="Left" Margin="165,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
+        <ComboBox Name="CmbSala" HorizontalAlignment="Left" Margin="411,99,0,0" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}"/>
         <Button Content="Guardar" HorizontalAlignment="Left" Margin="411,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.363,1.981" Click="Button_Click" FontFamily="Copperplate Gothic Bold" Width="153" Height="43" FontSize="24">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

@@ -29,6 +29,7 @@
         <Label Content="Usuario" HorizontalAlignment="Left" Margin="94,149,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
         <Label Content="Contraseña" HorizontalAlignment="Left" Margin="55,227,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
         <Image Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\promos.jpg" HorizontalAlignment="Left" Height="110" Margin="129,10,0,0" VerticalAlignment="Top" Width="228"/>
+        <TextBlock Name="txtId" HorizontalAlignment="Left" Margin="418,308,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
 
     </Grid>
 </Window>

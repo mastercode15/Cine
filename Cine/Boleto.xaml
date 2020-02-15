@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cine"
         mc:Ignorable="d"
-        Title="Boleto" Height="450" Width="800">
+        Title="Boleto" Height="542" Width="624">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3E3E40" Offset="0.092"/>
+                <GradientStop Color="#FF4F6F8F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Método de Pago:" HorizontalAlignment="Left" Margin="70,402,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Cliente:" HorizontalAlignment="Left" Margin="146,60,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Hora:" HorizontalAlignment="Left" Margin="335,272,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Fecha:" HorizontalAlignment="Left" Margin="159,272,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Idioma: " HorizontalAlignment="Left" Margin="159,200,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Película:" HorizontalAlignment="Left" Margin="136,124,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Definición: " HorizontalAlignment="Left" Margin="122,336,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <TextBox Name="TxtCliente" HorizontalAlignment="Left" Margin="235,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox Name="TxtPelicula" HorizontalAlignment="Left" Margin="235,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox Name="Txtidioma" HorizontalAlignment="Left" Margin="235,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox Name="TxtFecha" HorizontalAlignment="Left" Margin="235,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox Name="TxtHora" HorizontalAlignment="Left" Margin="402,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox Name="TxtDefinicion" HorizontalAlignment="Left" Margin="235,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox Name="TxtPago" HorizontalAlignment="Left" Margin="236,469,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox Name="TxtTotal" HorizontalAlignment="Left" Margin="235,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox Name="TxtSala" HorizontalAlignment="Left" Margin="430,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Label x:Name="___Sin_nombre_" Content="Total:" HorizontalAlignment="Left" Margin="161,464,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+        <Label Content="Sala:" HorizontalAlignment="Left" Margin="335,339,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Bold" FontSize="16"/>
+
     </Grid>
 </Window>

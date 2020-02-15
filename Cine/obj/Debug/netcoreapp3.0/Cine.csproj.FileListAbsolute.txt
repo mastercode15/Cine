@@ -193,3 +193,7 @@ C:\Users\LENOVO\Desktop\KEVIN\4to_Semestre\TADSI\Proyecto\Cine\obj\Debug\netcore
 C:\Users\LENOVO\Desktop\KEVIN\4to_Semestre\TADSI\Proyecto\Cine\obj\Debug\netcoreapp3.0\Compra.g.cs
 C:\Users\LENOVO\Desktop\KEVIN\4to_Semestre\TADSI\Proyecto\Cine\obj\Debug\netcoreapp3.0\Boleto.baml
 C:\Users\LENOVO\Desktop\KEVIN\4to_Semestre\TADSI\Proyecto\Cine\obj\Debug\netcoreapp3.0\Compra.baml
+C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\obj\Debug\netcoreapp3.0\Boleto.g.cs
+C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\obj\Debug\netcoreapp3.0\Compra.g.cs
+C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\obj\Debug\netcoreapp3.0\Boleto.baml
+C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\obj\Debug\netcoreapp3.0\Compra.baml

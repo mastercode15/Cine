@@ -7,19 +7,49 @@
         mc:Ignorable="d"
         Title="Compra" Height="310" Width="462">
     <Grid Height="321">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3E3E40" Offset="0.084"/>
+                <GradientStop Color="#FF4F6F8F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Label Content="Comprar" HorizontalAlignment="Left" Margin="146,35,0,0" VerticalAlignment="Top" Width="105" FontSize="22"/>
         <Label Name="IDCompra" Content="ID Compra" HorizontalAlignment="Left" Margin="70,128,0,0" VerticalAlignment="Top" Width="88"/>
         <Label Name="BoletosTot" Content="Boletos totales" HorizontalAlignment="Left" Margin="70,183,0,0" VerticalAlignment="Top"/>
         <Label Name="ValorTot" Content="Valor total" HorizontalAlignment="Left" Margin="70,236,0,0" VerticalAlignment="Top" Width="88"/>
-        <TextBlock Name="txtValTot" HorizontalAlignment="Left" Margin="164,236,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="23" AutomationProperties.Name="ValorTot"/>
-        <ComboBox Name="CmbMetPago" HorizontalAlignment="Left" Margin="313,105,0,0" VerticalAlignment="Top" Width="120" AutomationProperties.Name="MetPago"/>
+        
+        <ComboBox Name="CmbMetPago" HorizontalAlignment="Left" Margin="313,105,0,0" VerticalAlignment="Top" Width="120" AutomationProperties.Name="MetPago" SelectionChanged="CmbMetPago_SelectionChanged"/>
         <Label Name="MetPago" Content="Método de pago" HorizontalAlignment="Left" Margin="321,74,0,0" VerticalAlignment="Top" Width="104"/>
         <Label Name="Usuario" Content="Usuario" HorizontalAlignment="Left" Margin="70,79,0,0" VerticalAlignment="Top" Width="88"/>
-        <TextBlock Name="txtUsuario" HorizontalAlignment="Left" Margin="163,84,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="24" AutomationProperties.Name="Usuario"/>
-        <Button Name="BtnConfCompra" Content="Confirmar Compra" HorizontalAlignment="Left" Margin="321,196,0,0" VerticalAlignment="Top" Width="104" Height="28" Click="BtnConfCompra_Click"/>
-        <Button Name="BtnImpBol" Content="Imprimir boletos" HorizontalAlignment="Left" Margin="321,240,0,0" VerticalAlignment="Top" Width="104" Height="28" Click="BtnImpBol_Click"/>
-        <TextBox Name="txtIdcompra" HorizontalAlignment="Left" Margin="163,128,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="26"/>
-        <TextBox Name="txtbolTot" HorizontalAlignment="Left" Margin="164,183,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="26"/>
-
+        <Button Name="BtnConfCompra" Content="Confirmar" HorizontalAlignment="Left" Margin="321,196,0,0" VerticalAlignment="Top" Width="104" Height="28" Click="BtnConfCompra_Click" FontFamily="Copperplate Gothic Bold" FontSize="16">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC3C3C3" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="BtnImpBol" Content="Imprimir" HorizontalAlignment="Left" Margin="321,240,0,0" VerticalAlignment="Top" Width="104" Height="28" Click="BtnImpBol_Click" FontFamily="Copperplate Gothic Bold" FontSize="16">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox Name="txtIdcompra" HorizontalAlignment="Left" Margin="163,128,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="26" Background="{x:Null}"/>
+        <TextBox Name="txtbolTot" HorizontalAlignment="Left" Margin="164,183,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="26" Background="{x:Null}"/>
+        <TextBox Name="Txt1" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="Txt2" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="Txt3" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="Txt4" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="Txt5" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="Txt6" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="TxtUsuario" HorizontalAlignment="Left" Margin="164,79,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="26" Background="{x:Null}"/>
+        <TextBox Name="LblIdMet"  HorizontalAlignment="Left" Margin="242,249,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="Txt7"  HorizontalAlignment="Left" Margin="242,249,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="Txt8"  HorizontalAlignment="Left" Margin="242,249,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox Name="TxtValTot" HorizontalAlignment="Left" Margin="163,235,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="25" Background="{x:Null}"/>
+        <TextBox Name="TxtIds" HorizontalAlignment="Left" Margin="504,250,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
     </Grid>
 </Window>

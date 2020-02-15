@@ -24,95 +24,65 @@ namespace Cine
         int idpeli, idfuncion, idsala, idasiento, idboleto, idusuario, idmetpago;
 
         private void BtnImpBol_Click(object sender, RoutedEventArgs e)
-        {
+        {            
+            v1 = Txt1.Text;
+            v2 = Txt2.Text;
+            v3 = Txt3.Text;
+            v4 = Txt4.Text;
+            v5 = Txt5.Text;
+            v6 = Txt6.Text;
+            v7 = TxtValTot.Text;
+            v8 = TxtUsuario.Text;
+            v9 = (string)CmbMetPago.SelectedValue;
+            v10 = Txt7.Text;
+            v11 = Txt8.Text;
+            v12 = TxtIds.Text;
             generarBoleto();
         }
-
-        public Compra(int idp, int idf, int ids, int ida)
+        public static string v1;
+        public static string v2;
+        public static string v3;
+        public static string v4;
+        public static string v5;
+        public static string v6;
+        public static string v7;
+        public static string v8;
+        public static string v9;
+        public static string v10;
+        public static string v11;
+        public static string v12;
+        public Compra()
         {
             InitializeComponent();
             boleto = new Boleto();
             usuario = new WndLogin();
-            CargarVentana();
-            CargarMetodoPago();
-            idpeli = idp;
-            idfuncion = idf;
-            idsala = ids;
-            idasiento = ida;
+            
+            CargarPago();
+            
         }
 
-        private void BtnConfCompra_Click(object sender, RoutedEventArgs e)
+        public void cargarDatos()
         {
-            generarCompra();
+            //Txt1.Text = MainWindow.v1;
+            //Txt2.Text = MainWindow.v2;
+            //Txt3.Text = MainWindow.v3;
+            //Txt4.Text = MainWindow.v4;
+            //Txt5.Text = MainWindow.v5;
+            //Txt6.Text = MainWindow.v6;
+            //Txt7.Text = MainWindow.v7;
+            //Txt8.Text = MainWindow.v8;
+            //TxtIds.Text = MainWindow.v9;
         }
 
-        private void generarCompra()
-        {
-            idusuario = usuario.ID_Usuario();
-            //IDMetodoPago();
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
-            try
-            {
-                if (sqlcon.State == ConnectionState.Closed)
-                    sqlcon.Open();
-                String query = "insert into Compras values (@idcompra,@totalbol,@valtotal,@fk_id_usuario,@fk_id_met_pago)";
-                SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
-                sqlcmd.Parameters.AddWithValue("@idcompra", 1);
-                sqlcmd.Parameters.AddWithValue("@totalbol", txtbolTot.Text);
-                sqlcmd.Parameters.AddWithValue("@valtotal", 10);
-                sqlcmd.Parameters.AddWithValue("@fk_id_usuario", 1);
-                sqlcmd.Parameters.AddWithValue("@fk_id_met_pago", 1);
-                int count = Convert.ToInt32(sqlcmd.ExecuteScalar());
 
-                if (count == 1)
-                {
-                    MessageBox.Show("Compra exitosa");
-                }
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
-                sqlcon.Close();
-            }
-        }
-        private void generarBoleto()
+        private void CmbMetPago_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            decimal costoboleto = 10;
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
-            if (sqlcon.State == ConnectionState.Closed)
-                sqlcon.Open();
-            try
-            {
-                String query = "insert into boleto values (@idboleto,@costoboleto,@fk_id_compra,@fk_id_funcion,@fk_id_sala,@fk_id_asiento,@fk_id_peli)";
-                SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
-                sqlcmd.Parameters.AddWithValue("@idboleto",1);
-                sqlcmd.Parameters.AddWithValue("@costoboleto", costoboleto);
-                sqlcmd.Parameters.AddWithValue("@fk_id_compra", txtIdcompra.Text);
-                sqlcmd.Parameters.AddWithValue("@fk_id_funcion", idfuncion);
-                sqlcmd.Parameters.AddWithValue("@fk_id_sala", idsala);
-                sqlcmd.Parameters.AddWithValue("@fk_id_asiento", idasiento);
-                sqlcmd.Parameters.AddWithValue("@fk_id_peli", idpeli);
-                int count = Convert.ToInt32(sqlcmd.ExecuteScalar());
-                if (count == 1)
-                {
-                    boleto.Show();
-                    this.Hide();
-                    sqlcon.Close();
-                } else
-                {
-                    MessageBox.Show("Verificar datos");
-                    sqlcon.Close();
-                }
-            } catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
-                sqlcon.Close();
-            }
+
         }
 
-        private void CargarMetodoPago()
+        private void CargarPago()
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
 
             if (sqlcon.State == ConnectionState.Closed)
                 sqlcon.Open();
@@ -127,44 +97,99 @@ namespace Cine
             }
             sqlcon.Close();
         }
-        private void IDMetodoPago()
+        private void BtnConfCompra_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
-
-            if (sqlcon.State == ConnectionState.Closed)
-                sqlcon.Open();
-            String query = "SELECT ID_met_pago_compra FROM Metodo_pago_compra where Nom_met_pago_compra like @nommetpago";
-            SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
-            sqlcmd.Parameters.AddWithValue("@nommetpago", CmbMetPago.SelectedValue);
-            SqlDataReader registro = sqlcmd.ExecuteReader();
-            if (registro.Read())
-            {
-                idmetpago = Convert.ToInt32(registro["ID_met_pago_compra"]);
-            }
-            sqlcon.Close();
+            cargarDatos();
+            generarCompra();
+            
         }
-        private void CargarVentana()
+
+        private void generarCompra()
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+            IDMetodoPago();
+            String q;
+            String query;
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
             try
             {
                 if (sqlcon.State == ConnectionState.Closed)
                     sqlcon.Open();
-                String query = "SELECT Nom_usuario FROM usuario where ID_usuario = 1";
+                //query = "Insert into Compras values (@idcompra,@totalbol,@fk_id_usuario,@fk_id_met_pago,@valtotal)";
+                query = "INSERT INTO Compras VALUES (@idcompra,@totalbol,1,@fk_id_met_pago,@valtotal)";
                 SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
-                SqlDataReader registro = sqlcmd.ExecuteReader();
-                if (registro.Read()) 
-                { 
-                    txtUsuario.Text = registro["Nom_usuario"].ToString();
+                sqlcmd.Parameters.AddWithValue("@idcompra", Convert.ToInt32(txtIdcompra.Text));
+                sqlcmd.Parameters.AddWithValue("@totalbol", txtbolTot.Text);
+                //sqlcmd.Parameters.AddWithValue("@fk_id_usuario", Convert.ToInt32(TxtIds.Text));
+                sqlcmd.Parameters.AddWithValue("@fk_id_met_pago", Convert.ToInt32(LblIdMet.Text));
+                sqlcmd.Parameters.AddWithValue("@valtotal", TxtValTot.Text);
+                int count = Convert.ToInt32(sqlcmd.ExecuteScalar());
+                
+            
+                if (count == 1)
+                {
+                    MessageBox.Show("Compra exitosa");
                 }
-                //txtValTot.Text = (Convert.ToInt32(txtbolTot.Text) * 5).ToString();
-                sqlcon.Close();
             }
-            catch(Exception error)
+            catch (Exception error)
             {
                 MessageBox.Show(error.Message);
                 sqlcon.Close();
             }
         }
+        private void generarBoleto()
+        {
+            //decimal costoboleto = 10;
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
+            if (sqlcon.State == ConnectionState.Closed)
+                sqlcon.Open();
+            //try
+            //{
+                String query = "insert into Boleto values (3,@fk_id_compra,2,3,2,1,@costoboleto)";
+            //String query = "insert into Boleto values (1,@fk_id,4,@fk_id_sala,2,@fk_id_peli,@costoboleto)";
+            SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
+                //sqlcmd.Parameters.AddWithValue("@idboleto", 1);
+                sqlcmd.Parameters.AddWithValue("@costoboleto", TxtValTot.Text);
+                sqlcmd.Parameters.AddWithValue("@fk_id_compra", txtIdcompra.Text);
+                //sqlcmd.Parameters.AddWithValue("@fk_id_funcion", Txt7.Text);
+                sqlcmd.Parameters.AddWithValue("@fk_id_sala", Txt6.Text);
+                //sqlcmd.Parameters.AddWithValue("@fk_id_asiento",Convert.ToInt32(2));
+                //sqlcmd.Parameters.AddWithValue("@fk_id_peli", Txt8.Text);
+                int count = Convert.ToInt32(sqlcmd.ExecuteScalar());
+                if (count == 1)
+                {
+                    boleto.Show();
+                    this.Hide();
+                    sqlcon.Close();
+                } else
+                {
+                    boleto.Show();
+                    this.Hide();
+                    sqlcon.Close();
+                }
+            //} catch (Exception error)
+            //{
+            //    MessageBox.Show(error.Message);
+            //    sqlcon.Close();
+            //}
+        }
+
+        
+        private void IDMetodoPago()
+        {
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
+
+            if (sqlcon.State == ConnectionState.Closed)
+                sqlcon.Open();
+            String query = "SELECT ID_met_pago_compra FROM Metodo_pago_compra where Nom_met_pago_compra like'"+CmbMetPago.SelectedValue+"'";
+            SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
+            //sqlcmd.Parameters.AddWithValue("@nommetpago", CmbMetPago.SelectedValue);
+            SqlDataReader registro = sqlcmd.ExecuteReader();
+            if (registro.Read())
+            {
+                LblIdMet.Text = registro["ID_met_pago_compra"].ToString();
+            }
+            sqlcon.Close();
+        }
+        
     }
 }

@@ -29,10 +29,20 @@ namespace Cine
             CargarPeliculas();
         }
 
+        public static string v1;
+        public static string v2;
+        public static string v3;
+        public static string v4;
+        public static string v5;
+        public static string v6;
+        public static string v7;
+        public static string v8;
+        public static string v9;
+
 
         private void CargarPeliculas()
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
 
             if (sqlcon.State == ConnectionState.Closed)
                 sqlcon.Open();
@@ -55,7 +65,7 @@ namespace Cine
 
         private void CmbPeli_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
 
 
             if (sqlcon.State == ConnectionState.Closed)
@@ -67,7 +77,7 @@ namespace Cine
 
             if (registro.Read())
             {
-                idpeli = Convert.ToInt32(registro["ID_peli"]);
+                
                 TxtId.Text = registro["ID_peli"].ToString();
                 TxtDuracion.Text = registro["Dur_peli"].ToString();
                 TxtAnio.Text = registro["Anio_peli"].ToString();
@@ -91,7 +101,7 @@ namespace Cine
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
 
 
             if (sqlcon.State == ConnectionState.Closed)
@@ -103,8 +113,7 @@ namespace Cine
 
             if (registro1.Read())
             {
-                idfuncion = Convert.ToInt32(registro1["ID_funcion"]);
-                idsala = Convert.ToInt32(registro1["ID_sala"]);
+                TxtIdFunc.Text = registro1["ID_funcion"].ToString();
                 TxtFecha.Text = registro1["Fecha_funcion"].ToString();
                 TxtIdioma.Text = registro1["Idioma_funcion"].ToString();
                 TxtSala.Text = registro1["ID_sala"].ToString();
@@ -126,7 +135,16 @@ namespace Cine
         }
         private void SelecionarAsiento(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(idpeli,idfuncion,idsala);
+            v1 = (string)CmbPeli.SelectedValue;
+            v2 = TxtFecha.Text;
+            v3 = (string)CmbFuncion.SelectedValue;
+            v4 = TxtIdioma.Text;
+            v5 = TxtDefinicion.Text;
+            v6 = TxtSala.Text;
+            v7 = TxtIdFunc.Text;
+            v8 = TxtId.Text;
+            v9 = TxtIds.Text;
+            MainWindow main = new MainWindow();
             main.Show();
             this.Close();
         }

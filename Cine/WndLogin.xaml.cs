@@ -22,13 +22,17 @@ namespace Cine
        
         public WndLogin()
         {
-            InitializeComponent();            
+            InitializeComponent();  
+            
         }
+
+        public static string id;
 
         private void InicioSesion(object sender, RoutedEventArgs e)
         {
+            ID_Usuario();
          
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
 
             try
             {
@@ -41,10 +45,11 @@ namespace Cine
                 sqlcmd.Parameters.AddWithValue("@pwd", textPwd.Password);
                 int count = Convert.ToInt32(sqlcmd.ExecuteScalar());
 
-               
 
-                if(count == 1)
+
+                if (count == 1)
                 {
+                    id = txtId.Text;
                     Home home = new Home();
                     home.Show();
                     this.Close();
@@ -54,7 +59,8 @@ namespace Cine
                     MessageBox.Show("Usuario o contraseña incorrectos");
                 }
 
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -64,13 +70,12 @@ namespace Cine
                 sqlcon.Close();
             }
 
-            
+
 
         }
-        public int ID_Usuario()
-        {
-            int idusuario=1;
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
+        public void ID_Usuario()
+        {           
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=FZAMBRANO-OPER;Initial Catalog=cine;Integrated Security=True");
             try
             {
                 if (sqlcon.State == ConnectionState.Closed)
@@ -80,13 +85,17 @@ namespace Cine
                 sqlcmd.Parameters.AddWithValue("@correo", textEmail.Text);
                 sqlcmd.Parameters.AddWithValue("@pwd", textPwd.Password);
                 SqlDataReader registro = sqlcmd.ExecuteReader();
-                idusuario = Convert.ToInt32(registro["ID_usuario"]);
+                if (registro.Read())
+                {
+                    txtId.Text = registro["ID_usuario"].ToString();
+                }
+                
             }
             catch(Exception error)
             {
                 MessageBox.Show(error.Message);
             }
-            return idusuario;
+            
         }
 
 

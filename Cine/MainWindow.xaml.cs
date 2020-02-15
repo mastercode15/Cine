@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,138 +21,246 @@ namespace Cine
     /// </summary>
     public partial class MainWindow : Window
     {
-        Compra compra;
-        int idpeli, idfuncion, idsala, idasiento;
-        public MainWindow(int idp,int idf,int ids)
+        int contador = 0;
+        public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new ViewModel();
-            idpeli = idp;
-            idfuncion = idf;
-            idsala = ids;
         }
-
-        private void getAsiento()
+        private void Button_Click0(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-8CSIPAS\TEW_SQLEXPRESS;Initial Catalog=cine;Integrated Security=True");
-            sqlcon.Open();
-            String query = "select ID_asiento from Asiento where FK_ID_sala = 4";
-            SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
-            SqlDataReader registro = sqlcmd.ExecuteReader();
-            idasiento = 4;
-            sqlcon.Close();
+            if (MediaButton.Content == FindResource("Play"))
+            {
+                MediaButton.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador+" Asientos seleccionados";
+            }
+        }
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton1.Content == FindResource("Play"))
+            {
+                MediaButton1.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton1.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton2.Content == FindResource("Play"))
+            {
+                MediaButton2.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton2.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton3.Content == FindResource("Play"))
+            {
+                MediaButton3.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton3.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click4(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton4.Content == FindResource("Play"))
+            {
+                MediaButton4.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton4.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click5(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton5.Content == FindResource("Play"))
+            {
+                MediaButton5.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton5.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click6(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton6.Content == FindResource("Play"))
+            {
+                MediaButton6.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton6.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click7(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton7.Content == FindResource("Play"))
+            {
+                MediaButton7.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton7.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click8(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton8.Content == FindResource("Play"))
+            {
+                MediaButton8.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton8.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click9(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton9.Content == FindResource("Play"))
+            {
+                MediaButton9.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton9.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click10(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton10.Content == FindResource("Play"))
+            {
+                MediaButton10.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton10.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click11(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton11.Content == FindResource("Play"))
+            {
+                MediaButton11.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton11.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click12(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton12.Content == FindResource("Play"))
+            {
+                MediaButton12.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton12.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click13(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton13.Content == FindResource("Play"))
+            {
+
+                MediaButton13.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton13.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+        private void Button_Click14(object sender, RoutedEventArgs e)
+        {
+            if (MediaButton14.Content == FindResource("Play"))
+            {
+                MediaButton14.Content = FindResource("Stop");
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+            else
+            {
+                MediaButton14.Content = FindResource("Play");
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            getAsiento();
-            compra = new Compra(idpeli,idfuncion,idsala,idasiento);
-            compra.Show();
+            Compra c = new Compra();
+            c.Show();
             this.Hide();
-        }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            PeliculasWindows peli = new PeliculasWindows();
-            peli.Show();
-            this.Close();
         }
     }
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private bool _isPlaying = false;
-        private RelayCommand _playCommand;
-
-        public ViewModel()
-        {
-            isPlaying = false;
-        }
-
-        public bool isPlaying
-        {
-            get { return _isPlaying; }
-            set
-            {
-                _isPlaying = value;
-                OnPropertyChanged("isPlaying");
-            }
-        }
-
-        public ICommand PlayCommand
-        {
-            get
-            {
-                return _playCommand ?? new RelayCommand((x) =>
-                {
-                    var buttonType = x.ToString();
-
-                    if (null != buttonType)
-                    {
-                        if (buttonType.Contains("asientoSeleccionado"))
-                        {
-                            isPlaying = false;
-                        }
-                        else if (buttonType.Contains("asientoDeseleccionado"))
-                        {
-                            isPlaying = true;
-                        }
-                    }
-                });
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-
-    public class RelayCommand : ICommand
-    {
-        private readonly Predicate<object> _canExecute;
-        private readonly Action<object> _execute;
-
-        public event EventHandler CanExecuteChanged;
-
-        public RelayCommand(Action<object> execute) : this(execute, null) { }
-
-        public RelayCommand(Action<object> execute, Predicate<object> canExecute)
-        {
-            _execute = execute;
-            _canExecute = canExecute;
-        }
-
-        public bool CanExecute(object parameter)
-        {
-
-            if (_canExecute == null)
-            {
-                return true;
-            }
-
-            return _canExecute(parameter);
-        }
-
-        public void Execute(object parameter)
-        {
-            _execute(parameter);
-        }
-
-        public void RaiseCanExecuteChanged()
-        {
-            if (CanExecuteChanged != null)
-            {
-                CanExecuteChanged(this, EventArgs.Empty);
-            }
-        }
-
-    }
-
 }
 
 
