@@ -21,6 +21,8 @@ namespace Cine
     /// </summary>
     public partial class MainWindow : Window
     {
+        string seleccionado = @"C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoSeleccionado.png";
+        string deseleccionado = @"C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\asientoDeseleccionado.png";
         int contador = 0;
         public MainWindow()
         {
@@ -28,212 +30,240 @@ namespace Cine
         }
         private void Button_Click0(object sender, RoutedEventArgs e)
         {
-            if (MediaButton.Content == FindResource("Play"))
+            if (img0.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton.Content = FindResource("Stop");
-                contador -= 1;
+                img0.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton.Content = FindResource("Play");
-                contador += 1;
-                selection.Text = contador+" Asientos seleccionados";
+                img0.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            if (MediaButton1.Content == FindResource("Play"))
+            if (img1.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton1.Content = FindResource("Stop");
-                contador -= 1;
+                img1.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton1.Content = FindResource("Play");
-                contador += 1;
+                img1.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
-            if (MediaButton2.Content == FindResource("Play"))
+            if (img2.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton2.Content = FindResource("Stop");
-                contador -= 1;
+                img2.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton2.Content = FindResource("Play");
-                contador += 1;
+                img2.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
-            if (MediaButton3.Content == FindResource("Play"))
+            if (img3.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton3.Content = FindResource("Stop");
-                contador -= 1;
+                img3.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton3.Content = FindResource("Play");
-                contador += 1;
+                img3.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
-            if (MediaButton4.Content == FindResource("Play"))
+            if (img4.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton4.Content = FindResource("Stop");
-                contador -= 1;
+                img4.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton4.Content = FindResource("Play");
-                contador += 1;
+                img4.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click5(object sender, RoutedEventArgs e)
         {
-            if (MediaButton5.Content == FindResource("Play"))
+            if (img5.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton5.Content = FindResource("Stop");
-                contador -= 1;
+                img5.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton5.Content = FindResource("Play");
-                contador += 1;
+                img5.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click6(object sender, RoutedEventArgs e)
         {
-            if (MediaButton6.Content == FindResource("Play"))
+            if (img6.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton6.Content = FindResource("Stop");
-                contador -= 1;
+                img6.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton6.Content = FindResource("Play");
-                contador += 1;
+                img6.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click7(object sender, RoutedEventArgs e)
         {
-            if (MediaButton7.Content == FindResource("Play"))
+            if (img7.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton7.Content = FindResource("Stop");
-                contador -= 1;
+                img7.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton7.Content = FindResource("Play");
-                contador += 1;
+                img7.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click8(object sender, RoutedEventArgs e)
         {
-            if (MediaButton8.Content == FindResource("Play"))
+            if (img8.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton8.Content = FindResource("Stop");
-                contador -= 1;
+                img8.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton8.Content = FindResource("Play");
-                contador += 1;
+                img8.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click9(object sender, RoutedEventArgs e)
         {
-            if (MediaButton9.Content == FindResource("Play"))
+            if (img9.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton9.Content = FindResource("Stop");
-                contador -= 1;
+                img9.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton9.Content = FindResource("Play");
-                contador += 1;
+                img9.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click10(object sender, RoutedEventArgs e)
         {
-            if (MediaButton10.Content == FindResource("Play"))
+            if (img10.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton10.Content = FindResource("Stop");
-                contador -= 1;
+                img10.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton10.Content = FindResource("Play");
-                contador += 1;
+                img10.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click11(object sender, RoutedEventArgs e)
         {
-            if (MediaButton11.Content == FindResource("Play"))
+            if (img11.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton11.Content = FindResource("Stop");
-                contador -= 1;
+                img11.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton11.Content = FindResource("Play");
-                contador += 1;
+                img11.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click12(object sender, RoutedEventArgs e)
         {
-            if (MediaButton12.Content == FindResource("Play"))
+            if (img12.Source.ToString() ==deseleccion1.Source.ToString())
             {
-                MediaButton12.Content = FindResource("Stop");
-                contador -= 1;
+                img12.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton12.Content = FindResource("Play");
-                contador += 1;
+                img12.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
         }
         private void Button_Click13(object sender, RoutedEventArgs e)
         {
-            if (MediaButton13.Content == FindResource("Play"))
+            if (img13.Source.ToString() == deseleccion1.Source.ToString())
             {
-
-                MediaButton13.Content = FindResource("Stop");
-                contador -= 1;
-            }
-            else
-            {
-                MediaButton13.Content = FindResource("Play");
+                img13.Source = new BitmapImage(new Uri(seleccionado));
                 contador += 1;
                 selection.Text = contador + " Asientos seleccionados";
             }
+            else
+            {
+                img13.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
+                selection.Text = contador + " Asientos seleccionados";
+            }
+
         }
         private void Button_Click14(object sender, RoutedEventArgs e)
         {
-            if (MediaButton14.Content == FindResource("Play"))
+            if (img14.Source.ToString() == deseleccion1.Source.ToString())
             {
-                MediaButton14.Content = FindResource("Stop");
-                contador -= 1;
+                img14.Source = new BitmapImage(new Uri(seleccionado));
+                contador += 1;
+                selection.Text = contador + " Asientos seleccionados";
             }
             else
             {
-                MediaButton14.Content = FindResource("Play");
-                contador += 1;
+                img14.Source = new BitmapImage(new Uri(deseleccionado));
+                contador -= 1;
                 selection.Text = contador + " Asientos seleccionados";
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (contador == 0)
+            {
+                MessageBox.Show("Debe seleccionar por lo menos 1 asiento");
+            }
+            else
+            {
+                //Direccion de la siguiente página
             }
         }
     }
