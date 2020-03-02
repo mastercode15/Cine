@@ -21,7 +21,7 @@ namespace Cine
     {
         Boleto boleto;
         WndLogin usuario;
-        int idpeli, idfuncion, idsala, idasiento, idboleto, idusuario, idmetpago;
+        int idpeli, idfuncion, idsala, asiento, idboleto, idusuario, idmetpago;
 
         private void BtnImpBol_Click(object sender, RoutedEventArgs e)
         {            
@@ -36,7 +36,7 @@ namespace Cine
             v9 = (string)CmbMetPago.SelectedValue;
             v10 = Txt7.Text;
             v11 = Txt8.Text;
-            v12 = TxtIds.Text;
+            v12 = TxtValTot.Text;
             generarBoleto();
         }
         public static string v1;
@@ -56,7 +56,8 @@ namespace Cine
             InitializeComponent();
             boleto = new Boleto();
             usuario = new WndLogin();
-            
+            txtbolTot.Text = MainWindow.cont.ToString();
+            TxtValTot.Text = (MainWindow.cont * 5).ToString();
             CargarPago();
             
         }
@@ -144,7 +145,7 @@ namespace Cine
                 sqlcon.Open();
             //try
             //{
-                String query = "insert into Boleto values (3,@fk_id_compra,2,3,2,1,@costoboleto)";
+                String query = "insert into Boleto values (22,@fk_id_compra,2,3,2,1,@costoboleto)";
             //String query = "insert into Boleto values (1,@fk_id,4,@fk_id_sala,2,@fk_id_peli,@costoboleto)";
             SqlCommand sqlcmd = new SqlCommand(query, sqlcon);
                 //sqlcmd.Parameters.AddWithValue("@idboleto", 1);

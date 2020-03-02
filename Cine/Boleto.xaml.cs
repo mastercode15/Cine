@@ -39,16 +39,19 @@ namespace Cine
             SqlDataReader registro1 = sqlcmd.ExecuteReader();
 
             if (registro1.Read())
-
+            {
                 TxtCliente.Text = "Nicole Zambrano";
-            TxtPelicula.Text = registro1["Nom_peli"].ToString();
-            Txtidioma.Text = registro1["Idioma_funcion"].ToString();
-            TxtFecha.Text = registro1["Fecha_funcion"].ToString();
-            TxtHora.Text = registro1["Hora_funcion"].ToString();
-            TxtDefinicion.Text = registro1["Tipo_de_sala"].ToString();
-            TxtSala.Text = registro1["ID_sala"].ToString();
-            TxtTotal.Text = registro1["Nom_met_pago_compra"].ToString();
-            TxtPago.Text = registro1["valor_total"].ToString();
+                TxtPelicula.Text = registro1["Nom_peli"].ToString();
+                Txtidioma.Text = registro1["Idioma_funcion"].ToString();
+                TxtFecha.Text = registro1["Fecha_funcion"].ToString();
+                TxtHora.Text = registro1["Hora_funcion"].ToString();
+                TxtDefinicion.Text = registro1["Tipo_de_sala"].ToString();
+                TxtSala.Text = registro1["ID_sala"].ToString();
+                TxtTotal.Text = registro1["Nom_met_pago_compra"].ToString();
+                TxtPago.Text = registro1["valor_total"].ToString();
+            }
+
+                
         }
 
     }

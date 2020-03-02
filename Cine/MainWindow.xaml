@@ -6,65 +6,66 @@
         xmlns:local="clr-namespace:Cine"
         mc:Ignorable="d"
         Title="MainWindow" Height="573" Width="936">
-    <Window.Resources>
-        <Image x:Key="Play" Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoSeleccionado.png" Stretch="Fill" Height="36" Width="44" />
-        <Image x:Key="Stop" Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png" Stretch="Fill" Height="36" Width="44"/>
-    </Window.Resources>
+
     <Grid Margin="11,0,-11,0">
         <Image HorizontalAlignment="Left"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\cine1.jpg" Height="272" Margin="0,1,0,0" VerticalAlignment="Top" Width="461"/>
         <!--segunda fila-->
         <!--tercera fila-->
         <Button Click="Button_Click0"  Name="MediaButton" Margin="560,9,303,485">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img0"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click1" Name="MediaButton1" Margin="643,8,220,486">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img1"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click2" Name="MediaButton2" Margin="817,8,46,486">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img2"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click3" Name="MediaButton3" Margin="732,9,131,485">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img3"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click4" Name="MediaButton4" Margin="474,9,389,485">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img4"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click5"  Name="MediaButton5" Margin="560,88,303,405">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img5"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click6" Name="MediaButton6" Margin="643,88,220,406">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img6"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click7" Name="MediaButton7" Margin="817,88,46,406">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img7"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click8" Name="MediaButton8" Margin="732,88,131,405">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img8"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click9" Name="MediaButton9" Margin="474,88,389,406">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img9"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click10" Name="MediaButton10" Margin="474,88,389,406">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img10"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click11" Name="MediaButton11" Margin="750,168,113,326">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img11" Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click12" Name="MediaButton12" Margin="675,168,188,326">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img12" Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
         <Button Click="Button_Click13" Name="MediaButton13" Margin="599,168,264,326">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img13"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
+
         </Button>
         <Button Click="Button_Click14" Name="MediaButton14" Margin="528,168,335,326">
-            <DynamicResource ResourceKey="Stop"/>
+            <Image Name="img14"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png"/>
         </Button>
+        <Image Name="deseleccion1"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoDeseleccionado.png" Margin="27,252,831,244"/>
+        <Image Name="seleccion1"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\asientoSeleccionado.png" Margin="291,252,567,244"/>
 
-
-        <Image HorizontalAlignment="Left"  Source="C:\Users\franklin.zambrano\Documents\Universidad\Cuarto Semestre\Técnicas de Análisis\Proyecto_Cine\Cine\Images\pantalla.png" Height="37" Margin="520,253,0,0" VerticalAlignment="Top" Width="331"/>
-        <Button Content="Atrás" HorizontalAlignment="Left" Margin="70,310,0,0" VerticalAlignment="Top"  Height="40" Width="89"/>
-        <Button Content="Continuar" HorizontalAlignment="Left" Margin="630,310,0,0" VerticalAlignment="Top"  Height="40" Width="89" Click="Button_Click"/>
-        <TextBlock Name="selection" HorizontalAlignment="Left" Height="19" Margin="280,310,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <Image HorizontalAlignment="Left"  Source="C:\Users\Sebastian\OneDrive\Escritorio\prototipo_cine\Cine\Images\pantalla.png" Height="37" Margin="520,253,0,0" VerticalAlignment="Top" Width="331"/>
+        <Button Content="Atrás" HorizontalAlignment="Left" Margin="128,445,0,0" VerticalAlignment="Top"  Height="40" Width="89"/>
+        <Button Content="Continuar" HorizontalAlignment="Left" Margin="688,445,0,0" VerticalAlignment="Top"  Height="40" Width="89" Click="Button_Click"/>
+        <TextBlock Name="selection" HorizontalAlignment="Left" Height="19" Margin="338,445,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <TextBox HorizontalAlignment="Left" Margin="6,324,0,0" Text="Asiento Desocupado" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox HorizontalAlignment="Left" Margin="272,324,0,0" Text="Asiento Ocupado" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
 
     </Grid>
 </Window>

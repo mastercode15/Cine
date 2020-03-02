@@ -38,7 +38,7 @@
             </Button.Background>
         </Button>
         <TextBox Name="txtIdcompra" HorizontalAlignment="Left" Margin="163,128,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="26" Background="{x:Null}"/>
-        <TextBox Name="txtbolTot" HorizontalAlignment="Left" Margin="164,183,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="26" Background="{x:Null}"/>
+        <TextBox Name="txtbolTot" HorizontalAlignment="Left" Margin="164,183,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="26" Background="{x:Null}" IsEnabled="False"/>
         <TextBox Name="Txt1" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
         <TextBox Name="Txt2" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
         <TextBox Name="Txt3" HorizontalAlignment="Left" Margin="43,116,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
@@ -49,7 +49,7 @@
         <TextBox Name="LblIdMet"  HorizontalAlignment="Left" Margin="242,249,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <TextBox Name="Txt7"  HorizontalAlignment="Left" Margin="242,249,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <TextBox Name="Txt8"  HorizontalAlignment="Left" Margin="242,249,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
-        <TextBox Name="TxtValTot" HorizontalAlignment="Left" Margin="163,235,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="25" Background="{x:Null}"/>
+        <TextBox Name="TxtValTot" HorizontalAlignment="Left" Margin="163,235,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="25" Background="{x:Null}" IsEnabled="False"/>
         <TextBox Name="TxtIds" HorizontalAlignment="Left" Margin="504,250,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Hidden"/>
     </Grid>
 </Window>
